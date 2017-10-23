@@ -18,8 +18,9 @@ int main()
 
 Вход: 56 k Изход: Kelvin: 286.48*/
 
-    double cel, kel, fahr;
-    int c, k, a, command;
+  double cel, kel, fahr;
+
+    char command;
 
     cout<<"Fahrenheit: "; cin>>fahr;
     cout<<"c/k/a: "; cin>>command;
@@ -27,16 +28,16 @@ int main()
     cel= (fahr-32)*5/9;
     kel= cel + 273.15;
 
-    if(command = a)
+    if(command == 'a')
     {
         cout<<"Celsium: "<<cel<<endl;
         cout<<"Kelvin: "<<kel<<endl;
     }
-    else if (command = c)
-        {
+    if (command == 'c')
+    {
             cout<<"Celsium: "<<cel<<endl;
-        }
-            else if (command = k)
+    }
+    if (command == 'k')
                {
                   cout<<"Kelvin: "<<kel<<endl;
                }
