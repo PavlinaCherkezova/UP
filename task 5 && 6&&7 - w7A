@@ -37,6 +37,49 @@ int main()
     for (int i = 0; i < n; i++)
     {
         cin>> arn[i];
+           int n;
+    cin>>n;
+
+    int arr[100][100];
+    for (int i= 0; i <n; i++)
+       {
+          for( int j= 0; j <n; j++)
+            {
+                cin>> arr[i][j];
+            }
+       }
+       cout<<endl<<endl;
+    for (int i= 0; i <n; i++)
+       {
+          for( int j= 0; j <n; j++)
+            {
+                cout<< arr[i][j]<< " ";
+            }
+            cout<<endl;
+       }
+    cout<< "Glaven diagonal: ";
+    for (int i= 0; i <n; i++)
+       {
+
+          for( int j= 0; j <n; j++)
+            {
+                if(i == j) cout<< arr[i][j]<< " ";
+            }
+
+       }
+       for (int i=0; i<n; i++) cout<<arr[i][i];//s edin cikyl
+    cout<<endl;
+
+    cout<< "Vtorichen diagonal: ";
+    for (int i= 0; i < n; i++)
+       {
+
+          for( int j= 0; j < n; j++)
+            {
+                if(i== n-j-1) cout<< arr[i][j]<< " ";
+            }
+
+       }
 
     }
     int arm[100];
